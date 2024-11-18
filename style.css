@@ -1,0 +1,210 @@
+/* Reset për disa stile bazë të shfletuesit */
+* {
+    margin: 0; /* Heq marginën e parazgjedhur për çdo element */
+    padding: 0; /* Heq padding-un e parazgjedhur për çdo element */
+    box-sizing: border-box; /* Përdor kutinë e dimensioneve që përfshin edhe bordurat dhe paddingun */
+  }
+  
+  /* Stilimi i navigimit (navbar) */
+  .navbar {
+    display: flex; /* Vendos elementet në një rresht (flexbox) */
+    align-items: center; /* Vendos elementet në qendër vertikalisht */
+    justify-content: space-between; /* Vendos hapësirë të barabartë ndërmjet elementeve */
+    background-color: #f0f0f0; /* Ngjyrë neutrale gri e lehtë për navbar */
+    padding: 15px 20px; /* Shto hapësirë rreth elementeve të navbarit */
+  }
+  
+  /* Logo në navbar */
+  .navbar .logo {
+    display: flex; /* Vendos logo-n dhe emrin në një rresht */
+    align-items: center; /* Qendron logon dhe tekstin vertikalisht */
+  }
+  
+  /* Stilimi i imazhit të logos */
+  .navbar .logo img {
+    height: 50px; /* Përcakton lartësinë e logos */
+    margin-right: 10px; /* Hapësirë midis logos dhe emrit të dyqanit */
+  }
+  
+  /* Titulli i faqes (emri i dyqanit) */
+  .navbar .logo h1 {
+    font-size: 24px; /* Përcakton madhësinë e fontit për titullin */
+    color: #be3459; /* Ngjyrë gri e errët për titullin */
+  }
+  
+  /* Lidhjet e navigimit */
+  .navbar .nav-links {
+    display: flex; /* Vendos lidhjet në një rresht */
+    gap: 20px; /* Hapësira midis lidhjeve */
+  }
+  
+  /* Lidhjet në navbar */
+  .navbar .nav-links a {
+    text-decoration: none; /* Hiq linjën poshtë nga lidhjet */
+    color: #be3459; ; /* Ngjyrë gri e errët për lidhjet */
+    font-size: 18px; /* Përcakton madhësinë e fontit të lidhjeve */
+    font-weight: bold; /* Bën tekstin e lidhjeve më të trashë */
+  }
+  
+  /* Titulli kryesor i faqes */
+  main h2 {
+    font-size: 32px; /* Madhësia e fontit për titullin kryesor */
+    color: #be3459;  /* Ngjyrë gri e errët për titujt kryesorë */
+    text-align: center; /* Qendron titulli në mes të faqes */
+    margin-top: 20px; /* Hapësirë në pjesën e sipërme të titullit */
+  }
+  
+  /* Formulari i kontaktit */
+  #contactForm {
+    display: flex; /* Përdor flexbox për të organizuar elementët e formularit */
+    flex-direction: column; /* Vendos elementet njëri nën tjetrin (kolonë) */
+    align-items: center; /* Qendron elementet në qendër horizontalisht */
+    margin-top: 20px; /* Hapësirë në pjesën e sipërme */
+  }
+  
+  /* Inputet dhe textarea për formularin */
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%; /* Përdor gjerësinë 100% të disponueshme për inputet */
+    max-width: 400px; /* Përcakton një gjerësi maksimale për inputet */
+    padding: 10px; /* Shto padding rreth tekstit në input */
+    margin-bottom: 15px; /* Hapësirë në pjesën e poshtme të çdo inputi */
+    border: 1px solid #ccc; /* Kufijtë e inputeve në ngjyrë gri të hapur */
+    border-radius: 5px; /* Këndet e rrumbullakosura për inputet */
+    font-size: 16px; /* Përcakton madhësinë e fontit për inputet */
+  }
+  
+  /* Butoni për dërgimin e formularit */
+  #contactForm button {
+    padding: 10px 20px; /* Shto padding për butonin */
+    background-color: #be3459; /* Ngjyrë e gjelbër për butonin */
+    color: white; /* Ngjyrë e bardhë për tekstin në buton */
+    border: none; /* Hiq kufijtë për butonin */
+    border-radius: 5px; /* Këndet e rrumbullakosura për butonin */
+    font-size: 18px; /* Madhësia e fontit për butonin */
+    cursor: pointer; /* Tregon një gishtë që do të ndryshojë kur kalon mbi butonin */
+  }
+  
+  /* Ndryshimi i ngjyrës kur butoni hidhet mbi të */
+  #contactForm button:hover {
+    background-color:  #be3459; /* Ndryshimi i ngjyrës së butonit kur kalohet mbi të */
+  }
+  
+  /* Seksioni i luleve */
+  .flowers-list {
+    display: flex; /* Përdor flexbox për të vendosur lule në një rresht */
+    justify-content: space-around; /* Vendos hapësirë të barabartë ndërmjet elementeve */
+    flex-wrap: wrap; /* Lejon që elementet të rreshtohen në linja të reja kur është e nevojshme */
+    margin-top: 40px; /* Hapësirë në pjesën e sipërme të seksionit */
+  }
+  
+  /* Stilimi i çdo objekti të luleve */
+  .flower-item {
+    width: 250px; /* Përcakton një gjerësi fikse për secilin element të luleve */
+    margin-bottom: 20px; /* Hapësirë në pjesën e poshtme të secilit produkt */
+    text-align: center; /* Qendron tekstin në mes të kutisë së produktit */
+    background-color: #f9f9f9; /* Ngjyrë e lehtë gri për backgroundin e kutisë së produktit */
+    border-radius: 10px; /* Këndet e rrumbullakosura për kutinë e produktit */
+    padding: 20px; /* Shto hapësirë rreth përmbajtjes së produktit */
+  }
+  
+  /* Imazhi i çdo luleje */
+  .flower-item img {
+    width: 100%; /* Përdor 100% të gjerësisë për imazhin */
+    height: auto; /* Lartësia përshtatet automatikisht me gjerësinë */
+    border-radius: 5px; /* Këndet e rrumbullakosura për imazhin */
+  }
+  
+  /* Titulli dhe përshkrimi i produktit */
+  .flower-item h3 {
+    color: #333; /* Ngjyrë gri e errët për titujt e produkteve */
+    margin-top: 10px; /* Hapësirë në pjesën e sipërme të titullit */
+  }
+  
+  .flower-item p {
+    font-size: 16px; /* Madhësia e fontit për përshkrimin e produktit */
+    color: #555; /* Ngjyrë gri e lehtë për përshkrimin */
+    margin-top: 5px; /* Hapësirë në pjesën e sipërme të përshkrimit */
+  }
+  /* Stilet bazë */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+}
+
+
+
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Seksioni i imazhit */
+.image-section {
+    position: relative;
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Seksioni i tekstit */
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:  #be3459;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #be3459;;
+}
+
+
+  
+  

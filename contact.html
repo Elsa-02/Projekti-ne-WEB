@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Flower Shop</title>
+  <link rel="stylesheet" href="style.css"> <!-- Lidhja me skedarin CSS -->
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Logo e projektit.png" alt="Flower Shop Logo"> <!-- Imazhi i logos së dyqanit, ky imazh duhet të zëvendësohet me të vërtetën e logos -->
+        <h1>Flower Shop</h1> <!-- Emri i dyqanit -->
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a> <!-- Lidhja për faqen kryesore -->
+        <a href="about.html">About</a> <!-- Lidhja për seksionin Rreth Nesh -->
+        <a href="products.html">Products</a> <!-- Lidhja për produktet -->
+        <a href="contact.html">Contact</a> <!-- Lidhja për kontaktin -->
+        <a href="login.html">Login</a> <!-- Lidhja për login -->
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2> <!-- Titulli i seksionit -->
+    <form id="contactForm"> <!-- Formulari për kontakt -->
+      <input type="text" id="name" placeholder="Your Name" required> <!-- Fusha për emrin -->
+      <input type="email" id="email" placeholder="Your Email" required> <!-- Fusha për email -->
+      <textarea id="message" placeholder="Your Message" required></textarea> <!-- Fusha për mesazhin -->
+      <button type="submit">Send Message</button> <!-- Butoni për dërgimin e mesazhit -->
+    </form>
+  </main>
+
+  
+  <script src="script.js"></script> <!-- Lidhja me skedarin JavaScript për validim -->
+</body>
+</html>
