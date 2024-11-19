@@ -10,7 +10,7 @@
     display: flex; /* Vendos elementet në një rresht (flexbox) */
     align-items: center; /* Vendos elementet në qendër vertikalisht */
     justify-content: space-between; /* Vendos hapësirë të barabartë ndërmjet elementeve */
-    background-color: #f0f0f0; /* Ngjyrë neutrale gri e lehtë për navbar */
+    background-color: #bba8b8; /* Ngjyrë neutrale gri e lehtë për navbar */
     padding: 15px 20px; /* Shto hapësirë rreth elementeve të navbarit */
   }
   
@@ -28,8 +28,8 @@
   
   /* Titulli i faqes (emri i dyqanit) */
   .navbar .logo h1 {
-    font-size: 24px; /* Përcakton madhësinë e fontit për titullin */
-    color: #be3459; /* Ngjyrë gri e errët për titullin */
+    font-size: 30px; /* Përcakton madhësinë e fontit për titullin */
+    color: #544252; /* Ngjyrë gri e errët për titullin */
   }
   
   /* Lidhjet e navigimit */
@@ -41,7 +41,7 @@
   /* Lidhjet në navbar */
   .navbar .nav-links a {
     text-decoration: none; /* Hiq linjën poshtë nga lidhjet */
-    color: #be3459; ; /* Ngjyrë gri e errët për lidhjet */
+    color: #544252; ; /* Ngjyrë gri e errët për lidhjet */
     font-size: 18px; /* Përcakton madhësinë e fontit të lidhjeve */
     font-weight: bold; /* Bën tekstin e lidhjeve më të trashë */
   }
@@ -49,7 +49,7 @@
   /* Titulli kryesor i faqes */
   main h2 {
     font-size: 32px; /* Madhësia e fontit për titullin kryesor */
-    color: #be3459;  /* Ngjyrë gri e errët për titujt kryesorë */
+    color: #000000;  /* Ngjyrë gri e errët për titujt kryesorë */
     text-align: center; /* Qendron titulli në mes të faqes */
     margin-top: 20px; /* Hapësirë në pjesën e sipërme të titullit */
   }
@@ -77,7 +77,7 @@
   /* Butoni për dërgimin e formularit */
   #contactForm button {
     padding: 10px 20px; /* Shto padding për butonin */
-    background-color: #be3459; /* Ngjyrë e gjelbër për butonin */
+    background-color: #bb80b4; /* Ngjyrë e gjelbër për butonin */
     color: white; /* Ngjyrë e bardhë për tekstin në buton */
     border: none; /* Hiq kufijtë për butonin */
     border-radius: 5px; /* Këndet e rrumbullakosura për butonin */
@@ -87,7 +87,7 @@
   
   /* Ndryshimi i ngjyrës kur butoni hidhet mbi të */
   #contactForm button:hover {
-    background-color:  #be3459; /* Ndryshimi i ngjyrës së butonit kur kalohet mbi të */
+    background-color: #f484e5; /* Ndryshimi i ngjyrës së butonit kur kalohet mbi të */
   }
   
   /* Seksioni i luleve */
@@ -128,10 +128,10 @@
   }
   /* Stilet bazë */
 body {
-    font-family: Arial, sans-serif;
+    font-family:serif;
     margin: 0;
     padding: 0;
-    background-color: #fdfdfd;
+    background-color: #f6e9f4;
 }
 
 
@@ -140,6 +140,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+.logo1{
+  width: 150px; /* Madhësia e logos */
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3)); /* Hija transparente */
 }
 
 .content {
@@ -192,7 +196,7 @@ body {
 
 button {
     padding: 10px 20px;
-    background-color:  #be3459;;
+    background-color: #f484e5;
     color: white;
     border: none;
     border-radius: 5px;
@@ -202,7 +206,7 @@ button {
 }
 
 button:hover {
-    background-color: #be3459;;
+    background-color: #f484e5;
 }
 
 
