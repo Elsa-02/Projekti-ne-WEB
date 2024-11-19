@@ -60,7 +60,56 @@
     flex-direction: column; /* Vendos elementet njëri nën tjetrin (kolonë) */
     align-items: center; /* Qendron elementet në qendër horizontalisht */
     margin-top: 20px; /* Hapësirë në pjesën e sipërme */
-  }
+    
+  }.contact-box {
+    max-width: 500px; /* Gjerësia maksimale e kutisë */
+    margin: 30px auto; /* Qendron kutinë horizontalisht në mes të faqes */
+    background-color: #eecfeb; /* Ngjyra e sfondit të bardhë për kutinë */
+    padding: 20px; /* Hapësirë rreth përmbajtjes */
+    border-radius: 10px; /* Këndet e rrumbullakosura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hije e butë rreth kutisë */
+    text-align: center; /* Qendron tekstin brenda kutisë */
+}
+
+/* Titulli i seksionit të kontaktit */
+.contact-box h2 {
+    font-size: 28px; /* Madhësia e titullit */
+    color: #333; /* Ngjyra gri e errët */
+    margin-bottom: 20px; /* Hapësirë poshtë titullit */
+}
+
+/* Formulari brenda kutisë së kontaktit */
+.contact-box form {
+    display: flex;
+    flex-direction: column; /* Organizimi i inputeve në një kolonë */
+    gap: 15px; /* Hapësirë ndërmjet inputeve */
+}
+
+/* Inputet dhe textarea */
+.contact-box form input,
+.contact-box form textarea {
+    width: 100%; /* Përdor gjithë gjerësinë e kutisë */
+    padding: 10px; /* Hapësirë brenda inputeve */
+    border: 1px solid #d297cd; /* Kufijtë me ngjyrë gri të lehtë */
+    border-radius: 5px; /* Këndet e rrumbullakosura */
+    font-size: 16px; /* Madhësia e fontit */
+}
+
+/* Butoni për dërgimin e mesazhit */
+.contact-box form button {
+    background-color: #d297cd; /* Ngjyra e butonit */
+    color: white; /* Ngjyra e bardhë për tekstin */
+    padding: 10px; /* Hapësirë brenda butonit */
+    border: none; /* Hiq kufijtë */
+    border-radius: 5px; /* Këndet e rrumbullakosura */
+    font-size: 16px; /* Madhësia e fontit të butonit */
+    cursor: pointer; /* Tregon një gishtë mbi butonin */
+}
+
+.contact-box form button:hover {
+    background-color: #544252; /* Ndryshimi i ngjyrës kur kalon mbi butonin */
+}
+
   
   /* Inputet dhe textarea për formularin */
   #contactForm input,
@@ -69,7 +118,7 @@
     max-width: 400px; /* Përcakton një gjerësi maksimale për inputet */
     padding: 10px; /* Shto padding rreth tekstit në input */
     margin-bottom: 15px; /* Hapësirë në pjesën e poshtme të çdo inputi */
-    border: 1px solid #ccc; /* Kufijtë e inputeve në ngjyrë gri të hapur */
+    border: 1px solid #d297cd; /* Kufijtë e inputeve në ngjyrë gri të hapur */
     border-radius: 5px; /* Këndet e rrumbullakosura për inputet */
     font-size: 16px; /* Përcakton madhësinë e fontit për inputet */
   }
@@ -77,17 +126,17 @@
   /* Butoni për dërgimin e formularit */
   #contactForm button {
     padding: 10px 20px; /* Shto padding për butonin */
-    background-color: #bb80b4; /* Ngjyrë e gjelbër për butonin */
+    background-color:#bba8b8; /* Ngjyrë e gjelbër për butonin */
     color: white; /* Ngjyrë e bardhë për tekstin në buton */
     border: none; /* Hiq kufijtë për butonin */
     border-radius: 5px; /* Këndet e rrumbullakosura për butonin */
-    font-size: 18px; /* Madhësia e fontit për butonin */
+    font-size: 16px; /* Madhësia e fontit për butonin */
     cursor: pointer; /* Tregon një gishtë që do të ndryshojë kur kalon mbi butonin */
   }
   
   /* Ndryshimi i ngjyrës kur butoni hidhet mbi të */
   #contactForm button:hover {
-    background-color: #f484e5; /* Ndryshimi i ngjyrës së butonit kur kalohet mbi të */
+    background-color: #333; /* Ndryshimi i ngjyrës së butonit kur kalohet mbi të */
   }
   
   /* Seksioni i luleve */
