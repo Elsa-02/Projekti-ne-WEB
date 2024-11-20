@@ -245,7 +245,7 @@ body {
 
 button {
     padding: 10px 20px;
-    background-color: #f484e5;
+    background-color: #bba8b8;
     color: white;
     border: none;
     border-radius: 5px;
@@ -255,8 +255,77 @@ button {
 }
 
 button:hover {
-    background-color: #f484e5;
+    background-color: #333;
 }
+
+/* Pjesa e kutisë së login */
+.login-box {
+  max-width: 400px; /* Gjerësia maksimale e kutisë */
+  margin: 50px auto; /* Qendron kutinë në mes të faqes */
+  background-color: #eecfeb; /* Ngjyra e bardhë për sfondin e kutisë */
+  padding: 30px; /* Hapësira brenda kutisë */
+  border-radius: 10px; /* Këndet e rrumbullakosura */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hije për të krijuar efektin e ngritjes */
+  text-align: center; /* Qendron të gjitha elementet brenda kutisë */
+}
+
+/* Titulli i login-it */
+.login-box h2 {
+  font-size: 28px; /* Madhësia e fontit */
+  color: #333; /* Ngjyrë gri e errët */
+  margin-bottom: 20px; /* Hapësirë poshtë titullit */
+}
+
+/* Inputet në formular */
+.login-box input {
+  width: 100%; /* Përdor gjithë gjerësinë e kutisë */
+  padding: 10px; /* Hapësirë brenda inputeve */
+  margin-bottom: 15px; /* Hapësirë poshtë çdo inputi */
+  border: 1px solid #ccc; /* Kufijtë e inputeve */
+  border-radius: 5px; /* Këndet e rrumbullakosura */
+  font-size: 16px; /* Madhësia e fontit */
+}
+
+/* Butoni për login */
+.login-box .login-btn {
+  width: 100%; /* Përdor gjithë gjerësinë */
+  padding: 10px; /* Hapësirë brenda butonit */
+  background-color: #bb80b4; /* Ngjyra e butonit */
+  color: white; /* Teksti i bardhë */
+  border: none; /* Hiq kufijtë */
+  border-radius: 5px; /* Këndet e rrumbullakosura */
+  font-size: 18px; /* Madhësia e fontit */
+  cursor: pointer; /* Ndryshon kursorin në dorë */
+  margin-top: 10px; /* Hapësirë sipër */
+}
+
+.login-box .login-btn:hover {
+  background-color: #f484e5; /* Ndryshimi i ngjyrës kur kalohet mbi butonin */
+}
+
+/* Teksti nën formularin e login */
+.login-box p {
+  margin-top: 20px; /* Hapësirë sipër */
+  color: #555; /* Ngjyra gri për tekstin */
+}
+
+/* Butoni për "Sign Up" */
+.login-box .signup-btn {
+  width: 100%; /* Gjerësia maksimale e butonit */
+  padding: 10px; /* Hapësirë brenda butonit */
+  background-color: #d297cd; /* Ngjyra e butonit */
+  color: white; /* Teksti i bardhë */
+  border: none; /* Hiq kufijtë */
+  border-radius: 5px; /* Këndet e rrumbullakosura */
+  font-size: 18px; /* Madhësia e fontit */
+  cursor: pointer; /* Ndryshon kursorin */
+  margin-top: 10px; /* Hapësirë sipër */
+}
+
+.login-box .signup-btn:hover {
+  background-color: #ff5f5f; /* Ngjyra kur kalon mbi të */
+}
+
 
 
   
