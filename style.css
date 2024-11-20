@@ -325,6 +325,59 @@ button:hover {
 .login-box .signup-btn:hover {
   background-color: #555; /* Ngjyra kur kalon mbi të */
 }
+.signup-box {
+  width: 300px; /* Gjerësia e kutisë */
+  padding: 40px; /* Hapësira brenda kutisë */
+  background-color: #eecfeb; /* Ngjyra e sfondit të kutisë */
+  border-radius: 10px; /* Këndet e rrumbullakosura */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hije për efekt 3D */
+  margin: 50px auto; /* E vendos kutinë në qendër */
+  text-align: center; /* Qendron tekstin në mes */
+}
+
+.signup-box h2 {
+  color: #5a2d6e; /* Ngjyra e titullit */
+  margin-bottom: 20px; /* Hapësira poshtë titullit */
+}
+
+.signup-box input {
+  width: 100%; /* Gjerësia e plotë për inputet */
+  padding: 10px; /* Hapësira brenda inputeve */
+  margin-bottom: 15px; /* Hapësira midis inputeve */
+  border: 1px solid #eecfeb; /* Kufiri i inputeve */
+  border-radius: 5px; /* Këndet e rrumbullakosura për inputet */
+  font-size: 16px; /* Madhësia e fontit për inputet */
+}
+
+.signup-box button {
+  width: 100%; /* Gjerësia e butonit */
+  padding: 10px; /* Hapësira brenda butonit */
+  background-color: #d48ac2; /* Ngjyra e butonit */
+  color: white; /* Ngjyra e tekstit të butonit */
+  font-size: 16px; /* Madhësia e tekstit të butonit */
+  border: none; /* Pa kufi */
+  border-radius: 5px; /* Këndet e rrumbullakosura për butonin */
+  cursor: pointer; /* Kurse do të shfaqet një dorë kur miu qëndron mbi të */
+  transition: background-color 0.3s ease; /* Efekti i ndryshimit të ngjyrës kur lëviz miu */
+}
+
+.signup-box button:hover {
+  background-color: #333; /* Ngjyra kur miu qëndron mbi butonin */
+}
+
+.signup-box p {
+  margin-top: 20px; /* Hapësira sipër tekstit që thotë 'Already have an account?' */
+}
+
+.signup-box p a {
+  color: #5a2d6e; /* Ngjyra e lidhjes */
+  text-decoration: none; /* Heq nënvizimin */
+}
+
+.signup-box p a:hover {
+  text-decoration: underline; /* Shtoni nënvizimin kur lëviz miu mbi lidhje */
+}
+
 
 
 
