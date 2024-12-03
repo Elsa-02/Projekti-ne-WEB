@@ -378,6 +378,83 @@ button:hover {
   text-decoration: underline; /* Shtoni nënvizimin kur lëviz miu mbi lidhje */
 }
 
+/* Seksioni i Produkteve */
+
+/* Kontejneri kryesor i seksionit të produkteve */
+.product-gallery {
+  text-align: center; /* Qendon tekstin dhe përmbajtjen horizontalisht */
+  padding: 20px; /* Hapësirë brenda seksionit */
+  background-color: #f8f0f8; /* Ngjyra e sfondit për të gjithë seksionin */
+}
+
+/* Titulli i seksionit të produkteve */
+.product-gallery h2 {
+  font-size: 2em; /* Madhësia e tekstit për titullin */
+  margin-bottom: 20px; /* Hapësirë poshtë titullit */
+  color: #7b517d; /* Ngjyra e tekstit (e purpurt) */
+}
+
+/* Kontejneri për grilën e produkteve */
+.products {
+  display: grid; /* Përdor layout grilë për produktet */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Përsërit kolonat automatikisht dhe përshtatet me madhësinë e ekranit */
+  gap: 20px; /* Hapësirë midis produkteve */
+  padding: 0 10px; /* Hapësirë anash brenda grilës */
+}
+
+/* Stilizimi i secilës kuti produkti */
+.product {
+  background: #fff; /* Ngjyra e sfondit (e bardhë) */
+  border: 1px solid #e0dfe3; /* Kufiri me ngjyrë të lehtë gri */
+  border-radius: 10px; /* Cepa të rrumbullakosura */
+  padding: 15px; /* Hapësirë brenda kutisë */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hijë për një efekt elegant */
+  text-align: center; /* Qendron tekstin brenda kutisë */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animacion kur kutia është mbi hover */
+}
+
+/* Efekti kur miu kalon mbi një produkt */
+.product:hover {
+  transform: scale(1.05); /* Rrit pak madhësinë e kutisë */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shton më shumë hije */
+}
+
+/* Stilizimi i imazhit të produktit */
+.product img {
+  max-width: 100%; /* Kufizon gjerësinë e imazhit brenda kutisë */
+  border-radius: 8px; /* Cepa të rrumbullakosura për imazhin */
+}
+
+/* Stilizimi i emrit të produktit */
+.product h3 {
+  margin-top: 15px; /* Hapësirë lart tekstit */
+  font-size: 1.5em; /* Madhësia e tekstit */
+  color: #555; /* Ngjyra gri për tekstin */
+}
+
+/* Stilizimi i çmimit të produktit */
+.product p {
+  font-size: 1.2em; /* Madhësia e tekstit për çmimin */
+  color: #888; /* Ngjyra gri e zbehtë për çmimin */
+}
+
+/* Stilizimi i butonit */
+.product button {
+  margin-top: 10px; /* Hapësirë lart butonit */
+  padding: 10px 15px; /* Hapësirë brenda butonit */
+  background-color: #7b517d; /* Ngjyra e sfondit për butonin */
+  color: #fff; /* Ngjyra e tekstit (e bardhë) */
+  border: none; /* Pa kufi për butonin */
+  border-radius: 5px; /* Cepa të rrumbullakosura për butonin */
+  cursor: pointer; /* Ndryshon miun në dorë */
+  font-size: 1em; /* Madhësia e tekstit të butonit */
+}
+
+/* Efekti kur miu kalon mbi butonin */
+.product button:hover {
+  background-color: #915c94; /* Ngjyra e sfondit ndryshon në një purpurt më të errët */
+}
+
 
 
 
