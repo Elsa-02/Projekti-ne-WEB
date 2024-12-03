@@ -421,9 +421,12 @@ button:hover {
 
 /* Stilizimi i imazhit të produktit */
 .product img {
-  max-width: 100%; /* Kufizon gjerësinë e imazhit brenda kutisë */
+  width: 100%; /* Siguron që imazhi të shtrihet në gjerësinë e kutisë */
+  height: 200px; /* Vendos një lartësi fikse për të gjitha imazhet */
+  object-fit: cover; /* Rregullon përmasat e imazhit pa deformim */
   border-radius: 8px; /* Cepa të rrumbullakosura për imazhin */
 }
+
 
 /* Stilizimi i emrit të produktit */
 .product h3 {
