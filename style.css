@@ -139,49 +139,6 @@
     background-color: #333; /* Ndryshimi i ngjyrës së butonit kur kalohet mbi të */
   }
   
-  /* Seksioni i luleve */
-  .flowers-list {
-    display: flex; /* Përdor flexbox për të vendosur lule në një rresht */
-    justify-content: space-around; /* Vendos hapësirë të barabartë ndërmjet elementeve */
-    flex-wrap: wrap; /* Lejon që elementet të rreshtohen në linja të reja kur është e nevojshme */
-    margin-top: 40px; /* Hapësirë në pjesën e sipërme të seksionit */
-  }
-  
-  /* Stilimi i çdo objekti të luleve */
-  .flower-item {
-    width: 250px; /* Përcakton një gjerësi fikse për secilin element të luleve */
-    margin-bottom: 20px; /* Hapësirë në pjesën e poshtme të secilit produkt */
-    text-align: center; /* Qendron tekstin në mes të kutisë së produktit */
-    background-color: #f9f9f9; /* Ngjyrë e lehtë gri për backgroundin e kutisë së produktit */
-    border-radius: 10px; /* Këndet e rrumbullakosura për kutinë e produktit */
-    padding: 20px; /* Shto hapësirë rreth përmbajtjes së produktit */
-  }
-  
-  /* Imazhi i çdo luleje */
-  .flower-item img {
-    width: 100%; /* Përdor 100% të gjerësisë për imazhin */
-    height: auto; /* Lartësia përshtatet automatikisht me gjerësinë */
-    border-radius: 5px; /* Këndet e rrumbullakosura për imazhin */
-  }
-  
-  /* Titulli dhe përshkrimi i produktit */
-  .flower-item h3 {
-    color: #333; /* Ngjyrë gri e errët për titujt e produkteve */
-    margin-top: 10px; /* Hapësirë në pjesën e sipërme të titullit */
-  }
-  
-  .flower-item p {
-    font-size: 16px; /* Madhësia e fontit për përshkrimin e produktit */
-    color: #555; /* Ngjyrë gri e lehtë për përshkrimin */
-    margin-top: 5px; /* Hapësirë në pjesën e sipërme të përshkrimit */
-  }
-  /* Stilet bazë */
-body {
-    font-family:serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f6e9f4;
-}
 
 
 
