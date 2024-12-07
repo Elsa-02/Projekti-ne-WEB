@@ -60,5 +60,5 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   
     // Nëse të gjitha kontrollet kalohen, shfaq një mesazh për sukses
     alert("Login successful!");
-  });
-  
+
+    
