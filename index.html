@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flower Shop - Home</title>
   <style>
-    /* Kontrolla slider-in */
+ /* Slider */
 .slider {
   position: relative;
   display: grid;
-  width: 20%; /* Madhësia e slider-it */
-  margin: 0 auto;
+  width: 100%;
+  max-width: 80%;
+  margin: 20px auto;
   overflow: hidden;
-  border: 2px solid #ddd; /* Kufiri për estetik */
-  
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 500px;
 }
 
-/* Bëjmë slajdet që të ndodhin në një rresht */
+/* Slides */
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -26,40 +29,48 @@
 .slide {
   min-width: 100%;
   box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide img {
-  width: 100%;        /* Fotoja do të marrë 80% të gjerësisë së slider-it */
-  height: auto; 
-  object-fit: cover;  /* Përshtat lartësinë në mënyrë proporcionale */
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mbush plotësisht slider-in dhe ruaj proporcionalitet */
+  object-position: center; /* Qendron imazhi në slider */
+  aspect-ratio: 16 / 9; /* Ruaj raportin e imazhit në slider */
 }
-
 
 /* Butonat Next dhe Prev */
 button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border: none;
-  padding: 16px;
+  padding: 10px 15px;
   cursor: pointer;
-  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50%;
 }
 
 .prev {
-  left: 0;
+  left: 10px;
 }
 
 .next {
-  right: 0;
+  right: 10px;
 }
 
 button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
+
+
+
 
   </style>
   
@@ -86,6 +97,7 @@ button:hover {
           <img src="search.png" alt="searchi" class="search"></a>
        <a href ="shoppin cart">
            <img src="shopping-cart.png" alt="shopping" class="shopping"></a>
+           
       
      
 </div>
@@ -94,7 +106,9 @@ button:hover {
   
   <main>
     <h2>Welcome to Flower Shop</h2>
-    <p>Discover the best flowers for every occasion.</p>
+    <br>
+    <p style="text-align: center; ">Discover the best flowers for every occasion.</p>
+    <br>
     <div class="slider">
       <div class="slides">
         <div class="slide"><img src="ONE PIECE.png" alt="Flower 1"></div>
@@ -104,8 +118,11 @@ button:hover {
         <div class="slide"><img src="AUTNUM FLOWERS.png" alt="Flower 2"></div>
         <div class="slide"><img src="WINNTER FLOWERS.png" alt="Flower 2"></div>
       </div>
-      <button class="next" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="back" onclick="moveSlide(1)">&#10095;</button>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      
+      
+ 
     </div>
     <script>
       let currentIndex = 0; // Indeksi i slajdit të tanishëm
@@ -124,11 +141,10 @@ button:hover {
     
     // Përshtat slajd-in për të ndryshuar
     function updateSlider() {
-      // Lëvizjen për të fshehur dhe shfaqur slajdet
-      const newTransformValue = -currentIndex * 100; 
-      document.querySelector('.slides').style.transform = `translateX(${newTransformValue}%)`;
-    }
-    
+    const newTransformValue = -currentIndex * 100; 
+    document.querySelector('.slides').style.transform = `translateX(${newTransformValue}%)`;
+}
+
     // Inicializo slajdin me foton e parë
     updateSlider();
     
